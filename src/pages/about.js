@@ -25,22 +25,19 @@ class NotFoundPage extends React.Component {
           lovely life partner Lydia helps me edit my posts. </p>        
           <div>
         <h1>Contact</h1>
+        <div>
+        <h1>reCAPTCHA 2</h1>
         <form
-          name="contact"
+          name="contact-recaptcha"
           method="post"
           action="/thanks/"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
           onSubmit={this.handleSubmit}
         >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
+          <noscript>
+            <p>This form won’t work with Javascript disabled</p>
+          </noscript>
           <p>
             <label>
               Your name:<br />
@@ -59,11 +56,16 @@ class NotFoundPage extends React.Component {
               <textarea name="message" onChange={this.handleChange} />
             </label>
           </p>
+          <Recaptcha
+            ref="recaptcha"
+            sitekey={RECAPTCHA_KEY}
+            onChange={this.handleRecaptcha}
+          />
           <p>
             <button type="submit">Send</button>
           </p>
         </form>
-      </div>
+      </div> 
       
                 <p>This site was built with <a href="https://www.gatsbyjs.org">Gatsby</a> and is based on the <a href="https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/">Starter blog template</a> by <a href="https://twitter.com/kylemathews">Kyle Mathews</a>
 </p>
