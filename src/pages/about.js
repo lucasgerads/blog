@@ -27,11 +27,11 @@ class NotFoundPage extends React.Component {
           various applications such as welding, coating and material treatment. My
           lovely life partner Lydia helps me edit my posts. </p>        
         <div>
-        <h3>reCAPTCHA 2</h3>
+        <h3>Contact me</h3>
         <form
           name="contact-recaptcha"
           method="post"
-          action="/thanks/"
+          action="thanks"
           data-netlify="true"
           data-netlify-recaptcha="true"
           onSubmit={this.handleSubmit}
