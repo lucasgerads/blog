@@ -32,7 +32,7 @@ class NotFoundPage extends React.Component {
                 <label for="message">Message: </label> <br />
                 <textarea name="message"></textarea>
             </p>
-            <div data-netlify-recaptcha></div>
+            <div data-netlify-recaptcha="true"></div>
             <p>
                 <button type="submit">Send</button>
             </p>
