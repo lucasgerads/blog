@@ -25,7 +25,7 @@ class NotFoundPage extends React.Component {
                 <input type="text" name="name" />   
             </p>
             <p>
-                <label for="email">Your email address:</label>  <br />
+                <label for="email">Your email address (not required, but I won't be able to respond):</label>  <br />
                 <input type="email" name="email" />
             </p>
             <p>
