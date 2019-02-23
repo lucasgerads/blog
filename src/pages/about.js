@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Recaptcha from "react-google-recaptcha";
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
-class NotFoundPage extends React.Component {
+class About extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -75,7 +75,7 @@ class NotFoundPage extends React.Component {
   }
 }
 
-export default NotFoundPage
+export default About 
 
 export const pageQuery = graphql`
   query {
