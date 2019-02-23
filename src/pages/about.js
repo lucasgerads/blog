@@ -4,6 +4,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Recaptcha from "react-google-recaptcha";
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+
 class NotFoundPage extends React.Component {
   render() {
     const { data } = this.props
@@ -23,10 +26,8 @@ class NotFoundPage extends React.Component {
           Germany, spending my days building power electronics and automation for
           various applications such as welding, coating and material treatment. My
           lovely life partner Lydia helps me edit my posts. </p>        
-          <div>
-        <h1>Contact</h1>
         <div>
-        <h1>reCAPTCHA 2</h1>
+        <h3>reCAPTCHA 2</h3>
         <form
           name="contact-recaptcha"
           method="post"
