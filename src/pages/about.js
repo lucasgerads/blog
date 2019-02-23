@@ -14,11 +14,16 @@ class NotFoundPage extends React.Component {
         <SEO title="About" />
         <h1>About me</h1>
         <p> 
-          I am interested in and write about, in descending order of expertise: technology, business, science, entrepreneurship, politics, and life. All opinions expressed on this blog are my own.  </p>
-          I run the company <a href="http://aixcon.de">Aixcon PowerSystems GmbH</a> in Stolberg (Rhld.), Germany, spending
-          my days building power electronics and automation for various applications such as welding, coating and material treatment.
-           My lovely life partner Lydia helps me edit my posts. 
-        <h3>Feel free to contact me</h3>
+          I am interested in and write about, in descending order of expertise:
+          technology, business, science, entrepreneurship, politics, and life. All
+          opinions expressed on this blog are my own.  
+        </p>
+         <p> 
+          I run the company <a href="http://aixcon.de">Aixcon PowerSystems GmbH</a> in Stolberg (Rhld.),
+          Germany, spending my days building power electronics and automation for
+          various applications such as welding, coating and material treatment. My
+          lovely life partner Lydia helps me edit my posts. </p>        
+      <h3>Feel free to contact me</h3>
         <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
           <p>
             <label>Email: <input type="text" name="name" /></label>
