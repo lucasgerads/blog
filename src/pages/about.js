@@ -91,7 +91,7 @@ class About extends React.Component {
           <p>
             <label>
               Message:<br />
-              <textarea name="message" onChange={this.handleChange} />
+              <textarea name="message" onChange={this.handleChange} style={{display:'block', width:'80%', height:'200px'}}/>
             </label>
           </p>
           <Recaptcha
@@ -99,6 +99,7 @@ class About extends React.Component {
             sitekey={RECAPTCHA_KEY}
             onChange={this.handleRecaptcha}
           />
+          <br />
           <p>
             <button type="submit">Send</button>
           </p>
