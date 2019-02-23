@@ -19,7 +19,7 @@ class NotFoundPage extends React.Component {
           my days building power electronics and automation for various applications such as welding, coating and material treatment.
            My lovely life partner Lydia helps me edit my posts. 
         <h3>Feel free to contact me</h3>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <p>
                 <label for="name">Your Name (not required): </label> <br />
                 <input type="text" name="name" />   
