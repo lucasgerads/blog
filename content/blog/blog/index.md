@@ -14,3 +14,9 @@ fell on [Gatsby](https://www.gatsbyjs.org/). So, here I am  documenting for you 
 
 I am using [Kyle Mathews's](https://twitter.com/kylemathews) starter blog [template](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/). This gives you almost everything you need to build this blog. I added
 an about site. I will 
+
+
+## Github
+
+git remote add origin https://github.com/lucasgerads/blog.git
+git push -u origin master
