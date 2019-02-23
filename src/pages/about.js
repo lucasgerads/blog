@@ -20,24 +20,18 @@ class NotFoundPage extends React.Component {
            My lovely life partner Lydia helps me edit my posts. 
         <h3>Feel free to contact me</h3>
         <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-            <p>
-                <label for="name">Your Name (not required): </label> <br />
-                <input type="text" name="name" />   
-            </p>
-            <p>
-                <label for="email">Your email address (not required, but I won't be able to respond):</label>  <br />
-                <input type="email" name="email" />
-            </p>
-            <p>
-                <label for="message">Message: </label> <br />
-                <textarea name="message"></textarea>
-            </p>
-            <div data-netlify-recaptcha="true"></div>
-            <p>
-                <button type="submit">Send</button>
-            </p>
-            </form>
-        <p>This site was built with <a href="https://www.gatsbyjs.org">Gatsby</a> and is based on the <a href="https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/">Starter blog template</a> by <a href="https://twitter.com/kylemathews">Kyle Mathews</a>
+          <p>
+            <label>Email: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <div data-netlify-recaptcha="true"></div>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+                <p>This site was built with <a href="https://www.gatsbyjs.org">Gatsby</a> and is based on the <a href="https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/">Starter blog template</a> by <a href="https://twitter.com/kylemathews">Kyle Mathews</a>
 </p>
       </Layout>
     )
