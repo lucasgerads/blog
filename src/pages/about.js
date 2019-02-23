@@ -7,6 +7,12 @@ import SEO from "../components/seo"
 import Recaptcha from "react-google-recaptcha";
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 class About extends React.Component {
   constructor(props) {
     super(props);
