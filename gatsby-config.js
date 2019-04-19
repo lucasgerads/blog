@@ -25,6 +25,14 @@ module.exports = {
 
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/misc`,
+        name: `misc`,
+      },
+
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
