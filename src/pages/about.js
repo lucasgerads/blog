@@ -49,14 +49,14 @@ class About extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const bio = this.props.data.allMarkdownRemark
+    const bio = this.props.data.markdownRemark
    
     console.log(bio)
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="About" />
-         <div dangerouslySetInnerHTML={{ __html : bio.edges[0].node.html }} />
+         <div dangerouslySetInnerHTML={{ __html : bio.html }} /> 
          <Contact />
          </Layout>
     )
@@ -72,15 +72,8 @@ export const pageQuery = graphql`
           title
         }
       }
-      allMarkdownRemark (
-        filter: { fileAbsolutePath: {regex : "\/content\/misc\/bio/"} }
-      ){
-      edges {
-        node {
-          id
-          html
-          }
-        }
-      } 
+      markdownRemark (fields: { slug: { eq: "/bio/" } }) {
+        html
+    } 
   } 
 `

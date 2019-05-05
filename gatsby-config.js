@@ -1,13 +1,7 @@
+const siteMetadata = require("./content/misc/siteMetadata.json")
+
 module.exports = {
-  siteMetadata: {
-    title: `Lucas's Blog`,
-    author: `Lucas Gerads`,
-    description: `Unstructured musings on technology, science, politics and life`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `LucasGerads`,
-    },
-  },
+  siteMetadata,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

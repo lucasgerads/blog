@@ -4,12 +4,14 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
-function Bio() {
+const Bio = () => {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author,  shortBio, social,} = data.site.siteMetadata
+        console.log(shortBio)
+        console.log(author)
         return (
           <div
             style={{
@@ -31,12 +33,11 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in <a href="https://en.wikipedia.org/wiki/Aachen">Aachen </a>, Germany 
-              building useful things.
+              {shortBio}
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter
-              </a>
+              </a> 
             </p>
           </div>
         )
@@ -57,6 +58,7 @@ const bioQuery = graphql`
     site {
       siteMetadata {
         author
+        shortBio
         social {
           twitter
         }
