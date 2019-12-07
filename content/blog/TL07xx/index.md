@@ -19,7 +19,8 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
     </thead>
     <tbody>
         <tr>
-            <td rowspan=7>TL07</td>
+            <td></td>
+            <td   valign="top" rowspan=7>TL07</td>
             <td >1</td>
             <td>C</td>
             <td>D</td>
@@ -27,25 +28,30 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
 		     <td>E4</td>
         </tr>
         <tr>
+        <td></td>
 			<td >2</td>        
             <td>AC</td>
 		     <td>P</td>
 	         <td valign="top" rowspan=6>G4</td>           
         </tr>
         <tr>
+            <td></td>
             <td  valign="top" rowspan=5>4</td>
             <td>M</td>
             <td>PS</td>        
         </tr>
         <tr>
+            <td></td>
             <td>I</td>
             <td>PW</td>   
         </tr>
          <tr>
+            <td></td>
             <td  valign="top" rowspan=3>BC</td>
             <td>N</td>   
         </tr>
         <tr>
+            <td></td>
             <td>NS</td>   
         </tr>
      <tr>
