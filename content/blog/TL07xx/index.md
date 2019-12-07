@@ -19,7 +19,7 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
     </thead>
     <tbody>
         <tr>
-            <td valign="top" rowspan=7>TL07</td>
+            <td style="vertical-align: top;" rowspan=7>TL07</td>
             <td >1</td>
             <td>C</td>
             <td>D</td>
