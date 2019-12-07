@@ -9,6 +9,7 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
 <table>
     <thead>
         <tr>
+            <th></th>
             <th>Device Family</th>
             <th>Number of Devices</th>
             <th>Electrical Characteristics</th>
@@ -55,6 +56,7 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
             <td>NS</td>   
         </tr>
      <tr>
+            <td></td>
             <td>DB</td>   
         </tr>    
     </tbody>
