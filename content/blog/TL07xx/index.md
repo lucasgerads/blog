@@ -75,7 +75,7 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
 - **On a reel** – This field is optional. If the ICs are delivered on a reel, the "R" suffix is present; otherwise, this is left empty. 
 - **Eco Plan** – The E4 and G4 suffix used to signify that the IC was lead-free. This suffix is no longer significant because all Texas Instruments ICs are nowadays lead-free, and thus it only exists so that customers don't have to change their bill of materials. 
 
-Fun fact: the actual device marking on the IC might of course actually deviate from the part number and will consists of the first 2,3 or 4 columns. 
+Fun fact: the actual device marking on the IC might deviate from the part number and will consists of the first 2,3 or 4 columns. 
 
  
 
