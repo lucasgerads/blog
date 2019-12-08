@@ -19,7 +19,7 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
     </thead>
     <tbody>
         <tr>
-            <td style="padding-left: 1.16667rem;"  valign="top" rowspan=7>TL07</td>
+            <td style="padding-left: 0;"  valign="top" rowspan=7>TL07</td>
             <td >1</td>
             <td>C</td>
             <td>D</td>
@@ -57,13 +57,13 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
  - **Number of Devices** – The TL074 family comes with 1, 4 or 8 op amps integrated in one IC. 
  - **Electrical Characteristcs** – The electrical characteristics within the family of TL074 devices differ, and can be seen in instances such as the variation of input offset voltages. These differences have so far not played any role in my circuits. In my opinion, the most significant difference is signified by the character "I". These ICs are made for a broader temperature range, namely T<sub>a</sub> = –40°C to 85°C. For more details, see page 13ff in the data sheet. 
  - **Packaging** -- Different IC packaging is represented as follows:
-	 - D :  SOIC - Small outline integrated circuit ([TI Drawing](https://www.ti.com/lit/ml/mpds177g/mpds177g.pdf))
-	 - P : SO -  Plastic Dual-In-Line Package ([TI Drawing](https://www.ti.com/lit/ml/mpdi001b/mpdi001b.pdf))
-	 - PS: SOP - Small Outline Package ([TI Drawing](https://www.ti.com/lit/ml/msop001a/msop001a.pdf))
-	 - PW: TSSOP - Thin-Shrink Small-Outline Package ([TI Drawing](https://www.ti.com/lit/ml/mpds360/mpds360.pdf))
-	 - N: PDIP - Plastic Dual-In-Line Package ([TI Drawing](https://www.ti.com/lit/ml/mpdi002c/mpdi002c.pdf))
-	 - NS: SOP - Small Outline Package ([TI Drawing](https://www.ti.com/lit/ml/msop002a/msop002a.pdf))
-	 - DB: SSOP - Shrink small-outline package ([TI Drawing](https://www.ti.com/lit/ml/msso002e/msso002e.pdf))
+	 - **D** :  SOIC - Small outline integrated circuit ([TI Drawing](https://www.ti.com/lit/ml/mpds177g/mpds177g.pdf))
+	 - **P** : SO -  Plastic Dual-In-Line Package ([TI Drawing](https://www.ti.com/lit/ml/mpdi001b/mpdi001b.pdf))
+	 - **PS**: SOP - Small Outline Package ([TI Drawing](https://www.ti.com/lit/ml/msop001a/msop001a.pdf))
+	 - **PW**: TSSOP - Thin-Shrink Small-Outline Package ([TI Drawing](https://www.ti.com/lit/ml/mpds360/mpds360.pdf))
+	 - **N**: PDIP - Plastic Dual-In-Line Package ([TI Drawing](https://www.ti.com/lit/ml/mpdi002c/mpdi002c.pdf))
+	 - **NS**: SOP - Small Outline Package ([TI Drawing](https://www.ti.com/lit/ml/msop002a/msop002a.pdf))
+	 - **DB**: SSOP - Shrink small-outline package ([TI Drawing](https://www.ti.com/lit/ml/msso002e/msso002e.pdf))
 - **On a reel** – This field is optional. If the ICs are delivered on a reel, the "R" suffix is present; otherwise, this is left empty. 
 - **Eco Plan** – The E4 and G4 suffix used to signify that the IC was lead-free. This suffix is no longer significant because all Texas Instruments ICs are nowadays lead-free, and thus it only exists so that customers don't have to change their bill of materials. 
 
