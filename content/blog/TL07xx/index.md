@@ -1,7 +1,7 @@
 ---
 title: Part Numbers of TI's TL07xx Family 
 date: "2019-12-08T22:40:32.169Z"
-featuredImage: TL074CN.jpg
+featuredImage: ./TL074CN.jpg
 ---
 
 
