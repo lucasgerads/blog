@@ -4,7 +4,7 @@ date: "2019-12-08T22:40:32.169Z"
 ---
 
 
-It took me a while to figure out how TI creates part numbers of the TL07xx family of op amps.  I couldn't find a comprehensive description anywhere, so I made a table to explain the significance of the different sections of the part number. Upon first glance, it's hard to differentiate between a TL074ACDRE4 and a TL074BCDRG4. This is what I've been able to figure out: 
+It took me a while to figure out how TI creates part numbers of the TL07xx family of op amps. All this information is available on TI's datasheets and website, however the information is a little bit scattered and I couldn't find a comprehensive description anywhere, so I made a table to explain the significance of the different sections of the part number. Upon first glance, it's hard to differentiate between a TL074ACDRE4 and a TL074BCDRG4. This is what I've been able to figure out: 
 
 <table>
     <thead>
