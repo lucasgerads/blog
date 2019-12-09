@@ -57,7 +57,7 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
 </table>
 
  - **Number of Devices** – The TL074 family comes with 1, 4 or 8 op amps integrated in one IC. 
- - **Improved Version** – The electrical characteristics within the family of TL074 devices have been improved over the years, and can be seen in instances such as the variation of input offset voltages. The original Tl07x has this field blank and then TI added the improved versions TL07xA and TL07xB. These differences have so far not played any role in my circuits, but could of course be relevant to yours. Be careful, the TL07xC *isn't* an even better version. That's just the original version (i.e. version field left blank) for commercial application (see next bullet point). 
+ - **Improved Version** – The electrical characteristics within the family of TL074 devices have been improved over the years, and can be seen in instances such as the variation of input offset voltages. The original Tl07x has this field blank and then TI added the improved versions TL07xA and TL07xB. These differences have so far not played any role in my circuits, but could of course be relevant to yours. Be careful, the TL07xC *isn't* an even better version. That's just the original version (i.e. this field is left blank) for commercial application (see next bullet point). 
  - **Temperature Range** 
      - **C**: Commercial T<sub>a</sub> = 0°C to 70°C
      - **I**: Industrial T<sub>a</sub> = –40°C to 85°C
