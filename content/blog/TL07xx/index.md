@@ -1,7 +1,6 @@
 ---
 title: Part Numbers of TI's TL07xx Family 
 date: "2019-12-08T22:40:32.169Z"
-featuredImage: ./TL074CN.jpg
 ---
 
 ![TL074CN](TL074CN.jpg)
@@ -13,7 +12,8 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
         <tr>
             <th>Device Family</th>
             <th>Number of Devices</th>
-            <th>Electrical Characteristics</th>
+            <th>Improved Version (optional)</th>
+            <th>Temperature Range</th>
 		     <th>Packaging</th>
 	         <th>On a Reel (optional)</th>
 	        <th>Eco Plan (optional and obsolete)</th>
@@ -23,29 +23,29 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
         <tr>
             <td style="padding-left: 0;"  valign="top" rowspan=7>TL07</td>
             <td >1</td>
+            <td>A</td>
             <td>C</td>
             <td>D</td>
             <td  valign="top" rowspan=7>R</td>      
 		     <td>E4</td>
         </tr>
         <tr>
-			<td style="padding-left: 1.16667rem;">2</td>        
-            <td>AC</td>
+			<td style="padding-left: 1.16667rem;">2</td>  
+            <td valign="top" rowspan=6>B</td>
+            <td>I</td>
 		     <td>P</td>
 	         <td valign="top" rowspan=6>G4</td>           
         </tr>
         <tr>
             <td style="padding-left: 1.16667rem;" valign="top" rowspan=5>4</td>
-            <td>M</td>
+            <td valign="top" rowspan=5>M</td>
             <td>PS</td>        
         </tr>
         <tr>
-            <td style="padding-left: 1.16667rem;">I</td>
-            <td>PW</td>   
+            <td style="padding-left: 1.16667rem;">PW</td>
         </tr>
          <tr>
-            <td style="padding-left: 1.16667rem;" valign="top" rowspan=3>BC</td>
-            <td>N</td>   
+            <td style="padding-left: 1.16667rem;">N</td>  
         </tr>
         <tr>
             <td style="padding-left: 1.16667rem;">NS</td>   
@@ -57,7 +57,11 @@ It took me a while to figure out how TI creates part numbers of the TL07xx famil
 </table>
 
  - **Number of Devices** – The TL074 family comes with 1, 4 or 8 op amps integrated in one IC. 
- - **Electrical Characteristcs** – The electrical characteristics within the family of TL074 devices differ, and can be seen in instances such as the variation of input offset voltages. These differences have so far not played any role in my circuits. In my opinion, the most significant difference is signified by the character "I". These ICs are made for a broader temperature range, namely T<sub>a</sub> = –40°C to 85°C. For more details, see page 13ff in the data sheet. 
+ - **Improved Version** – The electrical characteristics within the family of TL074 devices have been improved over the years, and can be seen in instances such as the variation of input offset voltages. The original Tl07x has this field blank and then TI added the improved versions TL07xA and TL07xB. These differences have so far not played any role in my circuits, but could of course be relevant to yours. Be careful, the TL07xC *isn't* an even better version. That's just the original version (i.e. version field left blank) for commercial application (see next bullet point). 
+ - **Temperature Range** 
+     - **C**: Commercial T<sub>a</sub> = 0°C to 70°C
+     - **I**: Industrial T<sub>a</sub> = –40°C to 85°C
+     - **M**: Military T<sub>a</sub> = –55°C to 125°C
  - **Packaging** -- Different IC packaging is represented as follows:
 	 - **D** :  SOIC - Small outline integrated circuit ([TI Drawing](https://www.ti.com/lit/ml/mpds177g/mpds177g.pdf))
 	 - **P** : SO -  Plastic Dual-In-Line Package ([TI Drawing](https://www.ti.com/lit/ml/mpdi001b/mpdi001b.pdf))
