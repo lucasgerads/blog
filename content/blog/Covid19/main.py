@@ -95,16 +95,38 @@ print(d2[:,1])
 
 unique, counts = np.unique(d2[:,1], return_counts=True)
 
-print(unique)
-print(counts)
-
 plt.bar(unique, counts)
 plt.xlabel('Year of Birth', fontsize=12)
 plt.yticks(np.arange(0, max(counts) + 1, step=1))
 plt.savefig('year.png')
 
+plt.clf()
+
+unique, counts = np.unique(d2[:,2], return_counts=True)
+totalDeaths = np.sum(counts)
+print(unique, counts, totalDeaths)
+percentages = np.rint(counts  * 100 / totalDeaths)
+
+print(percentages)
+
+plt.bar(unique, counts)
+plt.xlabel('Gender', fontsize=12)
+plt.yticks(np.arange(0, max(counts) + 3, step=1))
+for i, (c, p)  in enumerate(zip(counts, percentages)):
+    print (i)
+    print(c)
+    print(p)
+    plt.gca().text(i-0.05, c + 0.5, str(p) + " %", color='black', fontweight='bold')
+
+plt.savefig('gender.png')
+
+
 plotPic = plotPic + "And the year of birth of the deceased. Their average (median) year of birth was " + str(m.floor(averageYear)) + ". Which corresponds to an average age of " + str(2020 - m.floor(averageYear)) + ".\n" 
 plotPic = plotPic + "![Year of Birth](year.png)" 
+
+plotPic = plotPic + "And the gender distribution of the deceased. " + str(percentages[1]) + " % of victms were male.\n" 
+plotPic = plotPic + "![Gender](gender.png)" 
+
 
 description = "## How this site is generated \n This site is automatically generated when data is added to the [spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y). You can find the corresponding python script inside my [github repository](https://github.com/lucasgerads/blog/blob/master/content/blog/Covid19/main.py)."
 
