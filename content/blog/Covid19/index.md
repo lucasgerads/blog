@@ -1,6 +1,6 @@
 --- 
  title: Covid19 in Aachen (Stadt und Städteregion) 
- date: "2020-03-28T12:36:45.000Z" 
+ date: "2020-03-29T10:28:53.000Z" 
 --- 
 The city of Aachen publishes (more or less) daily updates about Covid19. It's in the form of a daily press release, so I decided to collect this data to make it more usable for further processing.
 
