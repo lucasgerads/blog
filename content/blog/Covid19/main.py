@@ -37,11 +37,11 @@ print(dateFormatted)
 
 header = "--- \n title: Covid19 in Aachen (Stadt und Städteregion) \n date: \"" +  dateFormatted + "\" \n--- " 
 
-introduction = "The city of Aachen publishes (more or less) daily updates about Covid19. It's in the form of a daily press release, so I decided to collect this data to make it more usable for further processing ([google spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y))" 
+introduction = "The city of Aachen publishes (more or less) daily updates about Covid19. It's in the form of a daily press release, so I decided to collect this data to make it more usable for further processing ([google spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y))." 
 
-plotPic = "Below is development of cases in the Städteregion Aachen and the city of Aachen\n"
+plotPic = "Below is the development of cases in the Städteregion Aachen and the city of Aachen: \n"
 plotPic = plotPic + "![Cases of Covid19](cases.png)" 
-plotPic = plotPic + "and the current death toll\n"
+plotPic = plotPic + "And the current death toll: \n"
 plotPic = plotPic + "![Deaths from Covid19](deaths.png)" 
 
 source = "Source: [Stadt Aachen](http://www.aachen.de/DE/stadt_buerger/notfall_informationen/corona/aktuelles/pressemitteilungen/index.html)"
@@ -103,7 +103,7 @@ plt.xlabel('Year of Birth', fontsize=12)
 plt.yticks(np.arange(0, max(counts) + 1, step=1))
 plt.savefig('year.png')
 
-plotPic = plotPic + "and the year of birth of the deceased. Their average (median) year of birth was " + str(m.floor(averageYear)) + ". Which corresponds to an average age of " + str(2020 - m.floor(averageYear)) + ".\n" 
+plotPic = plotPic + "And the year of birth of the deceased. Their average (median) year of birth was " + str(m.floor(averageYear)) + ". Which corresponds to an average age of " + str(2020 - m.floor(averageYear)) + ".\n" 
 plotPic = plotPic + "![Year of Birth](year.png)" 
 
 description = "## How this site is generated \n This site is automatically generated when data is added to the [spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y). You can find the corresponding python script inside my [github repository](https://github.com/lucasgerads/blog/blob/master/content/blog/Covid19/main.py)."
