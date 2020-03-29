@@ -70,7 +70,7 @@ plt.clf()
 
 plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
 plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=5))
-plt.plot(x, deaths)
+plt.plot(x, deaths, "-g")
 plt.gcf().autofmt_xdate()
 plt.ylabel('death toll')
 plt.savefig('deaths.png')
@@ -106,12 +106,9 @@ plt.savefig('year.png')
 plotPic = plotPic + "and the year of birth of the deceased. Their average (median) year of birth was " + str(m.floor(averageYear)) + ". Which corresponds to an average age of " + str(2020 - m.floor(averageYear)) + ".\n" 
 plotPic = plotPic + "![Year of Birth](year.png)" 
 
-googleurl = "I keep the data in a google [spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y)"
+description = "## How this site is generated \n This site is automatically generated when data is added to the [spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y). You can find the corresponding python script inside my [github repository](https://github.com/lucasgerads/blog/blob/master/content/blog/Covid19/main.py)."
 
-
-description = "## How this site is generated \n This site is automatically generated when data is added to the spread sheet. You can find the corresponding python script inside my [github repository](https://github.com/lucasgerads/blog/blob/master/content/blog/Covid19/main.py)."
-
-text = header + "\n" + introduction + "\n\n" + plotPic + "\n\n" + description +  "\n\n" + googleurl  +  "\n\n\n ##Source\n" + source
+text = header + "\n" + introduction + "\n\n" + plotPic + "\n\n" + description +  "\n\n\n ##Source\n" + source
 print(text)
 
 file = open("index.md", "w") 

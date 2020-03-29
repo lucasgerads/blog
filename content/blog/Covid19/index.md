@@ -1,6 +1,6 @@
 --- 
  title: Covid19 in Aachen (Stadt und Städteregion) 
- date: "2020-03-29T13:13:01.000Z" 
+ date: "2020-03-29T13:18:28.000Z" 
 --- 
 The city of Aachen publishes (more or less) daily updates about Covid19. It's in the form of a daily press release, so I decided to collect this data to make it more usable for further processing ([google spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y))
 
@@ -10,9 +10,7 @@ Below is development of cases in the Städteregion Aachen and the city of Aachen
 ![Year of Birth](year.png)
 
 ## How this site is generated 
- This site is automatically generated when data is added to the spread sheet. You can find the corresponding python script inside my [github repository](https://github.com/lucasgerads/blog/blob/master/content/blog/Covid19/main.py).
-
-I keep the data in a google [spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y)
+ This site is automatically generated when data is added to the [spread sheet](https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y). You can find the corresponding python script inside my [github repository](https://github.com/lucasgerads/blog/blob/master/content/blog/Covid19/main.py).
 
 
  ##Source
