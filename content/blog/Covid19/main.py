@@ -28,7 +28,6 @@ for row in reader:
     deaths = int(row[3])
     data.append([date_time,cases,cases_city,deaths] )
 
-
 date = datetime.now()
 dateFormatted = date.strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
