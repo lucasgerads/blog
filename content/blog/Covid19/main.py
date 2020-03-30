@@ -112,6 +112,6 @@ description = "## How this site is generated \n This site is automatically gener
 
 text = header + "\n" + introduction + "\n\n" + plotPic + "\n\n" + description +  "\n\n\n ##Source\n" + source
 
-file = open("index.md", "w") 
+file = open("index.md", "w", encoding='utf8',) 
 file.write(text) 
 file.close() 
