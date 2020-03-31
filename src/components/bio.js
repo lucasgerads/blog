@@ -10,8 +10,6 @@ const Bio = () => {
       query={bioQuery}
       render={data => {
         const { author,  shortBio, social,} = data.site.siteMetadata
-        console.log(shortBio)
-        console.log(author)
         return (
           <div
             style={{
