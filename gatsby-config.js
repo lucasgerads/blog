@@ -3,9 +3,7 @@ const siteMetadata = require("./content/misc/siteMetadata.json")
 module.exports = {
   siteMetadata,
   plugins: [
-    {
-      resolve: `gatsby-plugin-preload-fonts`,
-    },
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
