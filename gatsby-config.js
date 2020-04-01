@@ -5,9 +5,6 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-preload-fonts`,
-      options: {
-        crossOrigin: `anonymous`,
-      },
     },
     {
       resolve: `gatsby-source-filesystem`,
