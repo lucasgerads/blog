@@ -37,6 +37,8 @@ introduction = "The city of Aachen publishes (more or less) daily updates about 
 
 plotPic = "Below is the development of cases in the Städteregion Aachen and the city of Aachen: \n"
 plotPic = plotPic + "![Cases of Covid19](cases.png)" 
+plotPic = plotPic +  "And on a log scale: \n"
+plotPic = plotPic + "![Cases of Covid19 (log scale)](cases_log.png)" 
 plotPic = plotPic + "And the current death toll: \n"
 plotPic = plotPic + "![Deaths from Covid19](deaths.png)" 
 source = "Source: [Stadt Aachen](http://www.aachen.de/DE/stadt_buerger/notfall_informationen/corona/aktuelles/pressemitteilungen/index.html)"
