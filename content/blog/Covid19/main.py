@@ -58,6 +58,18 @@ plt.ylabel('Cases')
 plt.savefig('cases.png')
 plt.clf()
 
+
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=5))
+plt.gca().set_yscale('log')
+plt.plot(x, cases, "-b", label="Städteregion")
+plt.plot(x, cases_aachen, "-r", label="Stadt Aachen")
+plt.gcf().autofmt_xdate()
+plt.legend(loc="upper left")
+plt.ylabel('Cases log')
+plt.savefig('cases_log.png')
+plt.clf()
+
 plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
 plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=5))
 plt.plot(x, deaths, "-g")
