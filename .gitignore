@@ -78,3 +78,4 @@ yarn-error.log
 
 # Covid19 directory
 content/blog/Covid19/*
+!content/blog/Covid19/.gitkeep
