@@ -51,8 +51,8 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "prebuild": "python test.py",
-    "prestart": "python test.py",
+    "prebuild": "python main.py",
+    "prestart": "python main.py",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
