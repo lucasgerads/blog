@@ -16,8 +16,9 @@ import os.path
 # setting output director
 targetDir = './content/blog/Covid19/' 
 if not os.path.isdir(targetDir):
-    print("directory doesn't exist")
-    quit()
+    print("directory doesn't exist, so i'll try to create it")
+    os.makedirs(targetDir)
+    
 
     
 
