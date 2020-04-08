@@ -8,9 +8,15 @@ import matplotlib.dates as mdates
 from matplotlib.ticker import MaxNLocator
 import numpy as np
 import math as m
+import os.path
 
 # setting output director
-targetDir = './blog/content/blog/Covid19/' 
+targetDir = './content/blog/Covid19/' 
+if not os.path.isdir(targetDir):
+    print("directory doesn't exist")
+    quit()
+
+    
 
 # pulling data form spreasheet 
 csv_url1='https://docs.google.com/spreadsheets/d/1Th4GSgmTpX4GtcebVDzIfRuCOu2cSOc2WJCORHcCw-Y/export?format=csv&gid=0'
