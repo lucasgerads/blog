@@ -75,3 +75,6 @@ yarn-error.log
 
 # Local Netlify folder
 .netlify
+
+# Covid19 directory
+content/blog/Covid19/*
