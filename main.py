@@ -3,6 +3,9 @@
 import requests, csv
 from io import StringIO
 from datetime import datetime
+import matplotlib
+matplotlib.use("agg")
+import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from matplotlib.ticker import MaxNLocator
