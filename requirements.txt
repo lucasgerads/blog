@@ -3,4 +3,4 @@ fonttools==4.6.0
 zopfli==0.1.7
 requests==2.23.0
 matplotlib==2.2.2
-numpy==1.14.5
+numpy==1.22.0
